@@ -4,7 +4,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<title>About | jzhzh&#39;s blog</title>
+<title>WWW Paper work summary | jzhzh&#39;s blog</title>
 
 <link rel="shortcut icon" href="https://jzhzh.github.io/favicon.ico?v=1638739012973">
 
@@ -101,22 +101,108 @@
         <div class="post-detail gt-bg-theme-color-second">
             <article class="gt-post-content">
                 <h2 class="post-title">
-                    About
+                    WWW Paper work summary
                 </h2>
                 <div class="post-info">
                     <time class="post-time gt-c-content-color-first">
-                        · 2019-01-25 ·
+                        · 2021-12-06 ·
                     </time>
+                    
+                        <a href="https://jzhzh.github.io/tag/KcoUQBW52/" class="post-tags">
+                            # Paper
+                        </a>
                     
                 </div>
                 <div class="post-content">
-                    <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<h2 id="联系我呀">📬 联系我呀</h2>
+                    <p>We focused on the close world data.</p>
+<ol>
+<li>
+<h2 id="data-collection">Data collection</h2>
+</li>
+</ol>
+<p>Using the web browser automation tool and the data-network packet analyzer to automatically visit four highly popular social media websites and record network packets. We collect the data of totally 300 pages and 50 instances of each page.</p>
+<ol start="2">
+<li>
+<h2 id="data-pre-processing">Data pre-processing</h2>
+</li>
+</ol>
+<ul>
+<li>Pre-processed data including removing outliers which include data with loading errors or large deviations from the packet size.</li>
+<li>Convert raw data to k-FP and CUMUL format.</li>
+<li>Identified all CDN traffic and resolved CDN URLs to IP addresses.</li>
+</ul>
+<ol start="3">
+<li>
+<h2 id="reproduce-the-experiments-of-k-fp-and-cumul">Reproduce the experiments of k-FP and CUMUL</h2>
+</li>
+</ol>
+<ul>
+<li>
+<h3 id="k-fp">k-FP</h3>
+<ul>
+<li>Transfer the raw data to the format of Time and Direction.</li>
+<li>Extract k-FP features.</li>
+<li>Evaluate using random forest.</li>
+</ul>
+</li>
+<li>
+<h3 id="cumul">CUMUL</h3>
+<ul>
+<li>Transfer the raw data to the format of Time and Length.</li>
+<li>Extract CUMUL features.</li>
+<li>Divide CUMUL features into those for training data and testing data.</li>
+<li>Evaluate using SVM.</li>
+</ul>
+</li>
+</ul>
+<ol start="4">
+<li>
+<h2 id="image-burst">Image Burst</h2>
+</li>
+</ol>
+<ul>
+<li>Extracted Image Burst features.</li>
+<li>Processed the features to the format which conform to random forest.</li>
+<li>Evaluate the model.</li>
+<li>Added one more cumulative burst size feature and re-evaluate the model.</li>
+</ul>
+<ol start="5">
+<li>
+<h2 id="information-leakage">Information leakage</h2>
+</li>
+</ol>
+<ul>
+<li>Calculated the information leakage ( We formalized ) of Image Burst feature, k-FP feature and CUMUL feature.</li>
+</ul>
+<ol start="6">
+<li>
+<h2 id="latency">Latency</h2>
+</li>
+</ol>
+<ul>
+<li>Generate the latency data which conforms to gamma distribution.</li>
+<li>Added it to n samples in each instance.</li>
+<li>For verifying our approach’s validity, get the influence of the latency on CDN Burst with different alpha in gamma distribution.</li>
+<li>For defense, verify whether adding different mean values of delay can defend against attacks.</li>
+</ul>
+<ol start="7">
+<li>
+<h2 id="remove-packets">Remove packets</h2>
+</li>
+</ol>
+<ul>
+<li>Remove n packets in each 100 packets.</li>
+<li>For defense, verify whether removing the packets can defend against attacks.</li>
+</ul>
+<ol start="8">
+<li>
+<h2 id="dummy-packets">Dummy packets</h2>
+</li>
+</ol>
+<ul>
+<li>Extracted the packets which don’t are in defense dataset as dummy packets.</li>
+<li>For defense, add dummy packets to known traces to defend our approach.</li>
+</ul>
 
                 </div>
             </article>
