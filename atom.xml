@@ -2,18 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://jzhzh.github.io</id>
     <title>jzhzh&apos;s blog</title>
-    <updated>2021-12-05T21:36:30.997Z</updated>
+    <updated>2021-12-08T15:08:54.648Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://jzhzh.github.io"/>
     <link rel="self" href="https://jzhzh.github.io/atom.xml"/>
     <logo>https://jzhzh.github.io/images/avatar.png</logo>
     <icon>https://jzhzh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, jzhzh&apos;s blog</rights>
-    <entry>
-        <title type="html"><![CDATA[WWW Paper work summary]]></title>
-        <id>https://jzhzh.github.io/post/www-paper-work-summary/</id>
-        <link href="https://jzhzh.github.io/post/www-paper-work-summary/">
-        </link>
-        <updated>2021-12-05T21:14:16.000Z</updated>
-    </entry>
 </feed>
